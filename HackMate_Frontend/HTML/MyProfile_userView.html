@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Images/favicon.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../Assets/Header/headerl.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/profile.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/Footer/footer.css">
+    <title>HackMate</title>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="mainsection">
+        <div class="container">
+            <div class="row">
+                <div class="caption">
+                    <h2 style="font-family: 'Fira Code'; font-weight: bold; font-size: 36px;">My Profile.</h2>
+                </div>
+                <div class="topmost_buttons">
+                    <a class=" addprojects btn btn-success" role="button">About</a>
+                    <a class=" about btn btn-success" href="./addproject.html" role="button">Projects</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="m d-flex">
+                        <div class="logo inputdeets">
+                            <img class="photo" alt=""> <label for="image_uploads">
+                                <a class="edit btn btn-success" role="button">Edit</a>
+                            </label><input style="height: 0px; width: 0px;" type="file" id="image_uploads"
+                                name="image_uploads" accept=".jpg, .jpeg, .png" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" id="save_button">
+                    <div class="d-flex justify-content-center">
+                        <button id="square_inactive" class="square_inactive" onclick="update_account()">Save
+                            Changes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <form id="par_form" name="par_form" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">NAME<sym>*</sym></label>
+                            <input type="text" class="form-control" id="name" autocomplete="off" required
+                                placeholder="Name">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">USERNAME<sym>*</sym></label>
+                            <input type="text" class="form-control" id="username" autocomplete="off" required
+                                placeholder="Username" readonly="readonly">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">EMAIL<sym>*</sym></label>
+                            <div type="email" class="form-control" id="email" autocomplete="off" required
+                                placeholder="Email">
+                            </div>
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="college" class="form-label">COLLEGE/UNIVERSITY<sym>*</sym></label>
+                            <input type="text" class="form-control" id="college" required autocomplete="off"
+                                placeholder="College/University">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="github" class="form-label">GITHUB LINK<sym>*</sym></label>
+                            <input type="link" class="form-control" id="git" required autocomplete="off"
+                                placeholder="GITHUB link">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="linkedln" class="form-label">LINKEDIN<sym>*</sym></label>
+                            <input type="text" class="form-control" id="linkedln" autocomplete="off" required
+                                placeholder="Linkedln" style="overflow-x:auto;">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personal_website" class="form-label">PERSONAL WEBSITE</label>
+                            <input type="text" class="form-control" id="personal_website" autocomplete="off"
+                                placeholder="Personal Website">
+                            <small>Error Message</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="year" class="form-label">YEAR OF GRADUATION<sym>*</sym></label>
+                            <input type="text" class="form-control" id="year" autocomplete="off" required
+                                placeholder="Year of Graduation">
+                            <small>Error Message</small>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <form id="form" name="form" method="post">
+                        <div class="mb-3">
+                            <label for="bio" class="form-label">BIO<sym>*</sym></label>
+                            <textarea class="form-control" rows="8" spellcheck="false" id="bio" required
+                                placeholder="Bio"></textarea>
+                            <small>Error Message</small>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 21rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">What are your skills?</h5>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="frontend">
+                                    <label class="check-label" for="flexCheckDefault">Frontend Development</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="backend">
+                                    <label class="check-label" for="flexCheckDefault">Backend Development</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="ui">
+                                    <label class="form-check-label" for="flexCheckDefault">UI/UX Design</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="ml">
+                                    <label class="check-label" for="flexCheckDefault">Machine Learning</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="management">
+                                    <label class="check-label" for="flexCheckDefault">Management</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="app">
+                                    <label class="check-label" for="flexCheckDefault">App Development</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="cyber">
+                                    <label class="check-label" for="flexCheckDefault">Cybersecurity</label>
+                                </p>
+                                <p>
+                                    <input class="form-check-input" type="checkbox" id="block">
+                                    <label class="check-label" for="flexCheckDefault">Blockchain</label>
+                                </p>
+                                <p class="d-flex justify-content-center" style="padding-top: 30px;">
+                                    <button id="square_inactive" class="square_inactive" style="background:#1D2833;"
+                                        onclick=addskills()>Submit</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottommost_button">
+                    <div class=" x col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center" id="bottom_square">
+                            <a href="./participant_resetpwd.html"><button id="square_active" class="square_inactive">Reset Password</button></a>
+                        </div>
+                        <div class=" second d-flex justify-content-center" id="bottom_square">
+                            <button id="square_inactive1" class="square_inactive1" onclick="delete_account()">Delete
+                                Account</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foobottom">
+
+    </div>
+    <div class="container">
+        <div id="loading" class="loading">
+            Loading&#8230;
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script type="text/javascript" src="../JS/config.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../JS/url.js"></script>
+<script src="../JS/profile_userview.js"></script>
+
+</html>

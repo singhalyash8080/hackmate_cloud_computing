@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito+Sans&family=Raleway&display=swap");
+body {
+  background-color: #23303d;
+}
+*{
+  font-family: "Fira Code", monospace;
+  color: #e7efef;
+}
+
+.main {
+  padding: 0;
+  background: #1d2833;
+
+  box-shadow: 3px 3px 3px 1px rgba(24, 33, 42, 0.83);
+  border-radius: 4px;
+}
+
+.main * {
+  background: #1d2833;
+}
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: visible;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #23303d;
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: "";
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: #1ea54c 1.5em 0 0 0, #1ea54c 1.1em 1.1em 0 0,
+    #1ea54c 0 1.5em 0 0, #1ea54c -1.1em 1.1em 0 0, #1ea54c -1.5em 0 0 0,
+    #1ea54c -1.1em -1.1em 0 0, #1ea54c 0 -1.5em 0 0, #1ea54c 1.1em -1.1em 0 0;
+  box-shadow: #1ea54c 1.5em 0 0 0, #1ea54c 1.1em 1.1em 0 0, #1ea54c 0 1.5em 0 0,
+    #1ea54c -1.1em 1.1em 0 0, #1ea54c -1.5em 0 0 0, #1ea54c -1.1em -1.1em 0 0,
+    #1ea54c 0 -1.5em 0 0, #1ea54c 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.nbw {
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36.9176px;
+  line-height: 48px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: #e7efef;
+}
+
+nbgre {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: #1ea54c;
+}
+
+.nbws {
+  padding-top: 11px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3378px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+
+  color: #e7efef;
+}
+.nbws2 {
+  padding-top: 11px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3378px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+
+  color: #e7efef;
+}
+
+.nbwsd {
+  padding-top: 5.98px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3378px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+
+  color: #e7efef;
+}
+
+.nbwsb {
+  padding-top: 12px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #e7efef;
+  padding-bottom: 112.41px;
+}
+
+.card {
+  margin-top: 81.74px;
+  width: 320px;
+  background: #1d2833;
+  /* card shadow */
+  box-shadow: 3px 3px 3px 1px rgba(24, 33, 42, 0.83);
+  border-radius: 2px;
+}
+
+.center {
+  text-align: center;
+}
+.card * {
+  background: #1d2833;
+}
+
+.card-body {
+  padding: 16px 0px;
+}
+
+.btns {
+  width: 230px;
+  height: 37px;
+  background: linear-gradient(103.71deg, #008249 -20.85%, #226045 122.33%);
+  box-shadow: 0.75px 0.75px 7.5px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5px;
+  border: none;
+}
+
+.display2 {
+  display: none;
+}
+
+.about {
+  margin: 60.33px 0 0;
+}
+
+@media (max-width: 1315px) {
+  .box2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 897px) {
+  .display1 {
+    display: none;
+  }
+  .display2 {
+    display: block;
+  }
+
+  .nbws2 {
+    padding-top: 5px;
+  }
+  .about {
+    margin: 15.33px 0 0;
+  }
+}
+@media (max-width: 576px) {
+  .nbwsb {
+    font-size: 13px;
+  }
+
+  .nbw {
+    font-size: 24.6836px;
+    line-height: 32px;
+  }
+  nbgre {
+    font-size: 13px;
+    line-height: 9px;
+  }
+
+  .nbws {
+    font-size: 13.0814px;
+    line-height: 18px;
+  }
+
+  .mode_of_conduct {
+    height: 25px;
+  }
+}

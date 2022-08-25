@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="./orghack.html">
+            <g><</g><b>HackMate</b><g>></g>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-end collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="padding-right: 27px;" href="./addhack.html">Add Hack</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle username" href="#" id="navbarDropdown"
+                        style="padding-right: 2vw;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="triangle-up"></div>
+                        <li><a class="dropdown-item" href="./orghack.html">MY HACKS</a></li>
+                        <li><a class="dropdown-item" href="./orguserview.html">MY PROFILE</a></li>
+                        <li><a class="dropdown-item" onclick="logout()" href="../" style="color: #F54646;">LOGOUT</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link img" href="./orguserview.html"><img class="orgdp" style="width:47px; height: 47px;" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<script>
+var login_count = 0;
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    user.getIdToken().then(function (idToken) {
+      auth = idToken;
+      axios(`${url}/organiser/login`, {
+        headers: {
+          Authorization: "Bearer " + auth,
+        },
+      }).then((response) => {
+        document.querySelector(".username").innerText = response.data.name;
+        document
+          .querySelector(".orgdp")
+          .setAttribute("src", response.data.logo);
+      }).catch((error) => {
+                  if (error.response.status == 400) {
+            swal(
+              "Warning!!",
+              "Some unknown error occured, please try again.",
+              "warning"
+            );
+          }
+      });
+    });
+  } else {
+    // User is signed out
+    if (login_count != 1) {
+      swal("Warning!!", "Please Sign In", "warning").then(() => {
+        window.location = "./orglognsignup.html";
+      });
+    }
+  }
+});
+
+function logout() {
+  login_count = 1;
+  firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      window.location = "./orglognsignup.html";
+      // Sign-out successful.
+    })
+    .catch((error) => {
+      // An error happened.
+    });
+}
+
+</script>

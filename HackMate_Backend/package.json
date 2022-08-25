@@ -1,0 +1,38 @@
+{
+  "name": "hackportal",
+  "version": "1.0.0",
+  "description": "Hackportal Backend Node",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.8.0",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.0.6",
+    "localtunnel": "^2.0.1",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STCVIT/Hackportal_Backend.git"
+  },
+  "author": "Deep Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/STCVIT/Hackportal_Backend/issues"
+  },
+  "homepage": "https://github.com/STCVIT/Hackportal_Backend#readme"
+}

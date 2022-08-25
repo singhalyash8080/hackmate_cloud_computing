@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Images/favicon.svg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/Header/headerl.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/Footer/footer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/teams.css">
+    <title>HackMate</title>
+</head>
+
+<body style="background-color: #23303d;">
+    <div id="nav"></div>
+    <div class="mainsection">
+        <div class="container" id="start">
+            <div class="row">
+                <div class=" maintext col=lg-12 col-md-12 col-sm-12" style="padding-bottom:5%">
+                    <h2>My Teams.</h2>
+                </div>
+            </div>
+            <div class="cards">
+            </div>
+            <div class="wrapper" id="wrapper"></div>
+            <div id="pagination"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="loading" class="loading">
+            Loading&#8230;
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script type="text/javascript" src="../JS/config.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../JS/url.js"></script>
+<script src="../JS/teams.js"></script>
+
+</html>

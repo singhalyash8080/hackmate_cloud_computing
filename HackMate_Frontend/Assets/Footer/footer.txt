@@ -1,0 +1,18 @@
+<div class="footer">
+        <div class="container-fluid justify-content-center">
+            <div class="row">
+                <div class="col-12 text-center footerbottomt" style="padding-top:15px">
+                    <g1><</g1>HackMate<g1>></g1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <hr>
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+    </div>

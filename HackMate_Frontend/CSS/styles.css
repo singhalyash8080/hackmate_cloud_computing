@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito+Sans&family=Raleway&display=swap");
+* {
+  background-color: #23303d;
+  font-family: "Fira Code", monospace;
+  color: #e7efef;
+}
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #23303d;
+  z-index: 99999;
+}
+.hack{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #1ea54c;
+  border-bottom: 16px solid #1ea54c;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 140px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.text {
+  padding-top: 10%;
+}
+lt {
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  text-align: right;
+  letter-spacing: 0.04em;
+
+  color: #e7efef;
+}
+
+.space {
+  padding-top: 5%;
+}
+
+lt1 {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 108px;
+}
+
+.box {
+  width: 379px;
+  height: 286.36px;
+  left: 278px;
+  top: 685px;
+  margin-bottom: 105.64px;
+  margin-top: 36px;
+  background: #1d2833;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 6px 6px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  align-content: center;
+  flex-basis: 379px;
+}
+
+.box2 {
+  margin-left: 5vw;
+}
+.card-bigtext {
+  margin-top: 18px;
+  background: #1d2833;
+  font-family: Fira Code;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 29.9457px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  color: #e7efef;
+}
+.card-text {
+  background: #1d2833;
+  margin-top: 44.88px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15.4px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: rgba(231, 239, 239, 0.7);
+}
+
+.btngetstarted {
+  margin-top: 46px;
+  width: 306px;
+  height: 41px;
+  left: 314px;
+  top: 889px;
+  background: linear-gradient(103.71deg, #008249 -20.85%, #226045 122.33%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  border: none;
+  font-size: 16.9706px;
+}
+
+.lanimg1{
+  margin-left: 8.33%;
+}
+
+.btngetstarted:hover {
+  background: linear-gradient(103.71deg, #157347 -20.85%, #226045 122.33%);
+}
+
+@media (max-width: 823px) {
+  .box2 {
+    margin-left: 1vw;
+  }
+}
+@media (max-width: 781px) {
+  .box2 {
+    margin-left: 0vw;
+  }
+}
+@media (max-width: 767px) {
+  .lanimg1 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  lt {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+
+    letter-spacing: 0.04em;
+
+    color: #e7efef;
+  }
+
+  lt1 {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .container2{
+    padding-top: 72px;
+  }
+}

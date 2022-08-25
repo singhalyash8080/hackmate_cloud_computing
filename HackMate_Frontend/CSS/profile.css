@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito+Sans&family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+sym{
+  color: rgba(255, 0, 0, 0.438);
+}
+body {
+  background-color: #23303d;
+}
+*{
+  font-family: "Fira Code", monospace;
+  color: #e7efef;
+}
+/*Mainsection CSS*/
+.form-control{
+    max-width: 478px;
+    min-height:36px;
+    border: 2px solid rgba(30, 165, 76, 0.2);
+    border-radius:2px ;
+    background-color: #2E3D4C;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #ffffff!important;
+    outline: 0;
+}
+.mb-3{
+  margin-bottom: 0rem!important;
+}
+.mb-3 small{
+  visibility: hidden;
+}
+input,input:focus {
+  outline: none!important;
+  border: 2px solid rgba(30, 165, 76, 0.2)!important;
+  box-shadow: 2px 2px 2px 1px rgba(24, 33, 42, 0.83)!important;
+}
+input:focus{
+  border-color:rgba(11, 226, 83, 0.329)!important;
+}
+.photo {
+  height: 85px;
+  width: 95px;
+  padding-right: 5%;
+}
+textarea,textarea:focus {
+  outline: none!important;
+  border: 2px solid rgba(30, 165, 76, 0.2)!important;
+  box-shadow: 2px 2px 2px 1px rgba(24, 33, 42, 0.83)!important;
+}
+textarea:focus{
+  border-color:rgba(11, 226, 83, 0.329)!important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color:white;
+  -webkit-focus-ring:unset;
+}
+input#git.form-control{
+  background-color:#2E3D4C;
+}
+input#design.form-control{
+  background-color:#2E3D4C;
+}
+input#email.form-control{
+  background-color:#2E3D4C;
+}
+textarea#review.form-control{
+  background-color:#2E3D4C;
+}
+input#projectName.form-control{
+  background-color:#2E3D4C;
+}
+input#linkedln.form-control{
+  background-color:#2E3D4C;
+}
+input#name.form-control{
+  background-color:#2E3D4C;
+}
+input#username.form-control{
+  background-color:#2E3D4C;
+}
+input#college.form-control{
+  background-color:#2E3D4C;
+}
+input#year.form-control{
+  background-color:#2E3D4C;
+}
+input#github.form-control{
+  background-color:#2E3D4C;
+}
+input#personal_website.form-control{
+  background-color:#2E3D4C;
+}
+textarea#bio.form-control{
+  background-color:#2E3D4C;
+}
+.content{
+  max-width: 478px;
+  padding-top:20px;
+  text-align:end;
+}
+.content1{
+  width: 239px;
+  padding-top:20px;
+  text-align:start;
+}
+.content2{
+  width: 239px;
+  padding-top:20px;
+  text-align:end;
+}
+::placeholder{
+  background-color: #2E3D4C;
+}
+:placeholder-shown{
+  background-color: #2E3D4C;
+}
+input{
+    border: 3px solid rgba(30, 165, 76, 0.2);
+    border-radius:2px ;
+    background-color: #2E3D4C;
+}
+#form{
+  padding-bottom:50px;
+}
+.maintext{
+    font-family: 'Fira Code', monospace;
+    background-color: #23303d;
+    font-style: normal;
+    font-weight:700 !important;
+    padding-top:15%;
+    font-size:36px;
+    line-height: 47px;
+    letter-spacing: 0.04em;
+    color: #E7EFEF;
+}
+.maintext h2{
+  font-weight:bold !important;
+}
+.edit {
+  background: none;
+  filter: drop-shadow(0.75px 0.75px 7.5px rgba(0, 0, 0, 0.2));
+  padding:1vh 4.5vh;
+  border: 2.53333px solid  #226045;
+  background: #23303d;
+  color: #e7efef;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code", monospace;
+}
+input#image_uploads {
+  opacity: 0;
+}
+.maincap{
+  font-family: 'Fira Code', monospace;
+  background-color: #23303d;
+  font-style: normal;
+  font-weight:700 !important;
+  font-size:36px;
+  padding-top:10%;
+  line-height: 47px;
+  letter-spacing: 0.04em;
+  color: #E7EFEF;
+}
+.maincap h2{
+  font-weight:bold !important;
+}
+.addprojects {
+  width: 101px;
+  height: 38px;
+  background: #1ea54c;
+  /* Pill Button Colour */
+
+  border: 2.5px solid #1ea54c;
+  box-sizing: border-box;
+  border-radius: 63.3333px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight:600;
+  font-size: 15.2px;
+  line-height: 140%;
+  /* or 21px */
+
+  letter-spacing: 0.04em;
+
+  /* Text Colour */
+
+  color: #e7efef;
+}
+
+.about {
+  width: 101px;
+  height: 38px;
+  border: 2.53333px solid #1ea54c;
+  box-sizing: border-box;
+  border-radius: 63.3333px;
+  background: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.2px;
+  line-height: 140%;
+  /* or 21px */
+
+  letter-spacing: 0.04em;
+
+  /* Pill Button Colour */
+
+  color: #1ea54c;
+}
+
+.maintext2{
+  font-family: 'Fira Code', monospace;
+  background-color: #23303d;
+  font-style: normal;
+  font-weight:700 !important;
+  padding-top:15%;
+  font-size:36px;
+  line-height: 47px;
+  letter-spacing: 0.04em;
+  color: #E7EFEF;
+}
+.maintext2 h2{
+  font-weight:bold !important;
+}
+#dashes{
+     padding-top: 50px;
+     overflow: hidden;
+}
+#dashes2{
+  padding-top: 40px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+#dashes3{
+  padding-top: 50px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+#girl{
+    overflow: hidden;
+    max-width:642px;
+    max-height:463.76px;
+    padding-top:15%;
+}
+#man{
+    overflow: hidden;
+    padding-top:60px;
+  max-width:486.11px;
+  max-height:363.92px;
+}
+#skills{
+  overflow: hidden;
+  padding-top:10%;
+  max-width:515.16px;
+  max-height:373.02px;
+}
+.btnsmallversion{
+    width: 120px;
+    height: 40px;
+    font-family: "Fira Code";
+    font-size: 18px;
+/* identical to box height */
+    letter-spacing: 0.04em;
+    color: #E7EFEF;
+    border-radius: 2px;
+    border: none;
+    font-family: "Fira Code", monospace;
+}
+::placeholder{
+  font-family: "Fira Code", monospace;
+}
+/*mainsection media queries*/
+@media only screen and (min-width:601px){
+  .maintext2{
+    display:none;
+  }
+}
+@media only screen and (max-width:600px){
+ #man{
+    display: none;
+ }
+ #organiser{
+    display: none;
+ }
+ #girl{
+     display: none;
+ }
+ #skills{
+   display: none;
+ }
+#foobottom{
+  padding-top:20%;
+}
+.m{
+  justify-content:center;
+}
+.heading_top{
+  padding-bottom:20px;
+}
+.maintext{
+  font-weight: 700;
+  font-size: 25.4313px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+.maintext2{
+  padding-top:20%;
+  font-weight: 700;
+  font-size: 25.4313px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+#dashes2{
+  padding-top:0%;
+}
+}
+@media only screen and  (max-width:990px){
+  #skills{
+    display:none;
+  }
+  #form {
+    padding-bottom: 0;
+  }
+}
+@media only screen and  (max-width:990px) and (min-width:768px){
+  .button_section{
+    padding-left:15%;
+    padding-top:12%;
+  }
+}
+@media only screen and (min-width:768px) {
+#foobottom{
+  padding-top: 10%;
+}
+.x{
+  display:inline-flex;
+}
+.m{
+  justify-content: flex-start;
+}
+.second{
+  padding-left:8%;
+}
+.heading_top{
+  display: none;
+}
+.card{
+  width:813.15px;
+  height:356px;
+}
+}
+@media only screen and (max-width:413px){
+  .maincap{
+    font-size: 25.4313px;
+  }
+}
+@media only screen and (max-width:767px){
+  .m{
+  justify-content:center;
+  }
+}
+/*skills page*/
+.skill_selection{
+  padding-bottom:30px;
+  max-width:478px;
+  text-align:start;
+}
+.top-button{
+  padding-bottom:20px;
+}
+.middle-button{
+  padding-bottom:20px;
+}
+.bottom-button{
+  padding-bottom:20px;
+}
+.bottommost-button{
+  padding-bottom:20px;
+}
+
+.button1{
+  padding: 0.5vw 2vw ;
+  padding-bottom:2vw;
+  text-align: center;
+  background: #1D2833;
+  border: 2.53333px solid #1EA54C;
+  box-sizing: border-box;
+  border-radius: 63.3333px;
+  color: #fff;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  max-height: 38px;
+  min-width :103.19px;
+  min-height:29.64px;
+  font-family: 'Nunito Sans';
+}
+.button {
+  padding: 0.5vw 2vw ;
+  padding-bottom:2vw;
+  text-align: center;
+  color: #fff;
+  background: #1EA54C;
+  border: 2.53333px solid #1EA54C;
+  box-sizing: border-box;
+  border-radius: 63.3333px;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  max-height: 38px;
+  min-width :103.19px;
+  min-height:29.64px;
+  font-family: 'Nunito Sans';
+}
+
+/*profile_userview*/
+.caption{
+  padding-top:5%;
+  padding-bottom:2%;
+}
+.topmost_buttons{
+  padding-bottom:40px;
+}
+#save_button{
+  padding-top:20px;
+  padding-bottom:40px;
+}
+#square_inactive1{
+  padding:1vh 4.5vh;
+  border: 2.53333px solid  #226045;
+  background: #23303d;
+  color: #e7efef;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code", monospace;
+}
+#square_inactive{
+  padding:1vh 4.5vh;
+  border: 2.53333px solid  #226045;
+  background: #23303d;
+  color: #e7efef;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code", monospace;
+}
+#square_inactive:hover{
+  padding:1vh 4.5vh;
+  border: 2.53333px solid  #226045;
+  background: #226045;
+  color: #e7efef;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code", monospace;
+}
+#square_active{
+  padding:1vh 4.5vh;
+  border: 2.53333px solid  #226045;
+  color:#e7efef;
+  filter: drop-shadow(2px 2px 14px rgba(0, 0, 0, 0.18));
+  background: linear-gradient(103.71deg, #008249 -20.85%, #226045 122.33%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  font-family: "Fira Code", monospace;
+}
+.form-label{
+  margin-bottom: 0rem;
+  color: rgba(231, 239, 239, 0.36);
+}
+.bottommost-button{
+  padding-bottom:40px;
+}
+.bottommost_button{
+  padding-top:60px;
+}
+#bottom_square{
+  padding-bottom:20px;
+}
+.card{
+  border:none;
+}
+.card-body{
+  background:#1D2833;
+}
+.card-title{
+  background:#1D2833;
+}
+p{
+  background:#1D2833;
+  margin-bottom:0.2rem;
+}
+.check-label{
+  background:#1D2833;
+}
+.card-body h5{
+  padding-bottom: 20px;
+}
+.not_button{
+  padding-left:30px;
+}
+.form-check-input:checked {
+  background-color: green ;
+  border-color: green ;
+}
+.form-check-input[type=checkbox] {
+  border-radius:0rem;
+}
+
+
+
+
+
+
+
+
+
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #23303d;
+  visibility: visible;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #23303d;
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: #1ea54c 1.5em 0 0 0, #1ea54c 1.1em 1.1em 0 0, #1ea54c 0 1.5em 0 0, #1ea54c -1.1em 1.1em 0 0, #1ea54c -1.5em 0 0 0, #1ea54c -1.1em -1.1em 0 0, #1ea54c 0 -1.5em 0 0, #1ea54c 1.1em -1.1em 0 0;
+  box-shadow: #1ea54c 1.5em 0 0 0, #1ea54c 1.1em 1.1em 0 0, #1ea54c 0 1.5em 0 0, #1ea54c -1.1em 1.1em 0 0, #1ea54c -1.5em 0 0 0, #1ea54c -1.1em -1.1em 0 0, #1ea54c 0 -1.5em 0 0, #1ea54c 1.1em -1.1em 0 0;
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and  (max-width:990px) and (min-width:768px){
+  #man{
+    max-width:340px;
+  }
+}

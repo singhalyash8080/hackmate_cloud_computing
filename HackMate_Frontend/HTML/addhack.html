@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/Images/favicon.svg" type="image/x-icon">
+    <title>HackMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/addhack.css">
+    <link rel="stylesheet" href="../Assets/Header/headero.css">
+    <link rel="stylesheet" href="../Assets/Footer/footer.css">
+</head>
+
+<body>
+
+    <div id="nav"></div>
+
+    <div class="main container-fluid">
+        <div class="row">
+            <div class="col-md-1 col-sm-1 col-1"> </div>
+            <div class="col-md-5">
+                <div class="hackname">Add Hackathon.</div>
+            </div>
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <form action="" method="post" name="myform">
+            <div class="row">
+
+                <div class="col-md-1 col-sm-1 col-1"> </div>
+
+                <div class="col-md-5">
+
+                    <div class="details">
+                        <div class="inputdeets">
+                            <nbg>NAME<r>*</r>
+                            </nbg><br>
+                            <input class="textbox" type="text" name="name" id=""> <br>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>VENUE<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="text" name="venue" id="" maxlength="50"> <br>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>MODE OF CONDUCT<r>*</r>
+                            </nbg> <br>
+                            <select class="textbox" name="moc" style="  color: #e7efef;">
+                                <option value="" disabled selected>Select</option>
+                                <option value="Online" style="color: #e7efef;">Online</option>
+                                <option value="Offline" style="  color: #e7efef;">Offline</option>
+                            </select>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>WEBSITE LINK<r>*</r>
+                            </nbg> <br>
+                            <input type="url" class="textbox" name="website" id=""> <br>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>ABOUT<r>*</r>
+                            </nbg> <br>
+                            <textarea class="textboxbio" name="about" id="" cols="30" rows="10" maxlength="750"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="detailsouter col-md-5">
+
+                    <div class="details2">
+
+
+                        <div class="inputdeets inputdeetsposter" style="height: 226.062px;">
+                            <nbg>POSTER<r>*</r>
+                            </nbg>
+                            <label id="uploaded_image" for="image_uploads">
+                                <div class="box text-center"><img class="plus" src="../Assets/Images/plus.svg" alt="">
+                                </div>
+                            </label>
+                            <input style="height: 0px; width: 0px;" type="file" id="image_uploads" name="image_uploads"
+                                accept=".jpg, .jpeg, .png">
+                            <br>
+                            <label class="image_uploads">
+                            </label>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>START DATE<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="datetime-local" name="start" id=""> <br>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>END DATE<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="datetime-local" name="end" id=""> <br>
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>MIN TEAM SIZE<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="number" name="mints" id="" min="1">
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>MAX TEAM SIZE<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="number" name="maxts" id="" min="1">
+                        </div>
+                        <div class="inputdeets">
+                            <nbg>PRIZES POOL (IN ₹)<r>*</r>
+                            </nbg> <br>
+                            <input class="textbox" type="number" name="prizes" id="" min="1"> <br>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 text-center justify-content-center">
+                    <div class="btns">
+                        <input class=" delete btn btn-success" name="submit" type="submit" value="Submit"
+                            style="color: #fff; opacity: 1;">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="foobottom"></div>
+
+    <div class="container">
+        <div id="loading" class="loading">
+            Loading&#8230;
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+    <script type="text/javascript" src="../JS/config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../JS/url.js"></script>
+    <script src="../JS/addhack.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito+Sans&family=Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #23303d;
+    font-family: "Fira Code", monospace;
+    color: #e7efef;
+    max-height:100%;
+  }
+/*Mainsection CSS*/
+.form-control{
+    max-width: 478px;
+    box-shadow: 3px 3px 3px 1px rgba(24, 33, 42, 0.83);
+    border: 3px solid rgba(30, 165, 76, 0.2);
+    border-radius:2px ;
+    background-color: #2E3D4C;
+    font-family:"Fira Code", monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color:white!important;
+}
+.mb-3{
+  margin-bottom: 0rem!important;
+}
+.mb-3 small{
+  visibility: hidden;
+}
+input {
+  outline: none!important;
+  border: 2px solid rgba(30, 165, 76, 0.2)!important;
+  box-shadow: 3px 3px 3px 1px rgba(24, 33, 42, 0.83)!important;
+}
+input:focus{
+  border-color:rgba(11, 226, 83, 0.329)!important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color:white;
+}
+input#username.form-control{
+  background-color:#2E3D4C;
+}
+input#phone.form-control{
+  background-color:#2E3D4C;
+}
+input#college.form-control{
+  background-color:#2E3D4C;
+}
+input#email.form-control{
+  background-color:#2E3D4C;
+}
+input#website.form-control{
+  background-color:#2E3D4C;
+}
+::placeholder{
+  font-family: "Fira Code", monospace;
+}
+input{
+    border: 3px solid rgba(30, 165, 76, 0.2);
+    border-radius:2px ;
+    background-color: #2E3D4C;
+}
+#dashes{
+     padding-top: 50px;
+     overflow: hidden;
+}
+#organiser{
+    overflow: hidden;
+    padding-top:60px;
+}
+.btnsmallversion{
+    width: 143px;
+    height: 42px;
+    font-family: "Fira Code";
+    font-weight: bold;
+    text-align: center;
+/* identical to box height */
+    letter-spacing: 0.04em;
+    color: #E7EFEF;
+    border-radius: 2px;
+    border: none;
+}
+.content{
+  max-width:478px;
+  padding-top: 20px;
+  text-align: end;
+}
+.maintext{
+  padding-top:20%;
+}
+@media only screen and (min-width:600px){
+  #dashes{
+    display:none;
+  }
+  .maintext{
+    display:none;
+  }
+  .formpart{
+    padding-top:20%;
+    padding-bottom:10%;
+  }
+}
+@media only screen and (max-width:599px){
+  #organiser{
+    display:none;
+  }
+}
